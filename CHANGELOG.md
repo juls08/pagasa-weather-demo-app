@@ -27,3 +27,8 @@ Initial demo application with FastAPI backend, React frontend, PostgreSQL, Redis
 
 ### Changed
 - Fix Release changelogs.
+
+## [1.1.0] - 2026-05-20
+
+### Changed
+- Updated Release and Deploy workflows for GitHub Actions.
