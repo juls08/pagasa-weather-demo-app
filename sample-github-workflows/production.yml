@@ -1,0 +1,21 @@
+name: Deploy to Production
+
+on:
+  release:
+    types: [published] # Triggers when you click "Publish Release" in GitHub
+  # OR use git tags directly:
+  # push:
+  #   tags:
+  #     - 'v*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # GitHub Actions automatically checks out the exact code marked by the tag
+
+      name: Deploy to Production Server
+        run: echo "Deploying version ${{ github.ref_name }} to production..."
